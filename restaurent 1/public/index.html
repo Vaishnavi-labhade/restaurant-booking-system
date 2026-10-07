@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Restaurant - Table Booking System</title>
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for clean, modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- NAVIGATION BAR                                               -->
+  <!-- ============================================================ -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">🍽️</span> Foodie Restaurant
+      </a>
+
+      <!-- Mobile menu hamburger button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#menu" class="nav-item">Menu</a>
+        <a href="#booking" class="nav-item">Book a Table</a>
+        <a href="#reviews" class="nav-item">Reviews</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- 1. HOME / HERO SECTION                                       -->
+  <!-- ============================================================ -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="badge">Welcome to Foodie Restaurant</span>
+        <h1 class="hero-title">Delicious Food, Memorable Moments</h1>
+        <p class="hero-description">
+          Experience gourmet recipes crafted with farm-fresh ingredients in a warm, friendly ambiance. Reserve your dining table easily online in just a few clicks!
+        </p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">Book a Table</a>
+          <a href="#menu" class="btn btn-outline">Explore Menu</a>
+        </div>
+      </div>
+      
+      <div class="hero-highlights">
+        <div class="highlight-card">
+          <span class="highlight-icon">🥗</span>
+          <h3>Fresh Ingredients</h3>
+          <p>100% natural, farm-to-table organic produce daily.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">👨‍🍳</span>
+          <h3>Expert Chefs</h3>
+          <p>Passionate culinary masters preparing each plate with care.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">⚡</span>
+          <h3>Instant Booking</h3>
+          <p>Confirmed reservations without waiting in long queues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 2. ABOUT SECTION                                             -->
+  <!-- ============================================================ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Us</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">Discover the story and passion behind Foodie Restaurant</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">📖</div>
+          <h3>Our Story</h3>
+          <p>
+            Established in 2018, Foodie Restaurant started with a simple vision: to bring people together over honest, flavorful food. Over the years, we have become a favorite dining destination for families, friends, and food enthusiasts.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>
+            We are committed to exceptional culinary standards, stringent kitchen hygiene, warm hospitality, and reasonable prices. Every visit is designed to leave you with happy memories and a satisfied appetite.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon">✨</div>
+          <h3>Cozy Ambiance</h3>
+          <p>
+            Whether it is an intimate family dinner, a casual lunch with friends, or a corporate meeting, our soothing decor and attentive service provide the ideal dining atmosphere.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 3. MENU SECTION                                              -->
+  <!-- ============================================================ -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Popular Menu</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">A curated selection of our guests' all-time favorite dishes</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Item 1: Biryani -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🍛</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Hyderabadi Dum Biryani</h3>
+              <span class="menu-price">₹280</span>
+            </div>
+            <p class="menu-desc">Fragrant basmati rice slow-cooked on dum with royal spices, saffron, and served with spicy salan and raita.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Paneer Butter Masala -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🍲</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Paneer Butter Masala</h3>
+              <span class="menu-price">₹250</span>
+            </div>
+            <p class="menu-desc">Soft cottage cheese cubes simmered in a rich, velvety tomato and cashew butter gravy topped with fresh cream.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Dal Makhani -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🫕</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Dal Makhani</h3>
+              <span class="menu-price">₹210</span>
+            </div>
+            <p class="menu-desc">Whole black lentils and kidney beans slow-simmered overnight on charcoal with butter and cream.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Chole Bhature -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🥟</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Delhi Chole Bhature</h3>
+              <span class="menu-price">₹160</span>
+            </div>
+            <p class="menu-desc">Tangy spiced chickpea curry served with two hot, fluffy golden bhaturas, pickled green chilies, and onions.</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Masala Dosa -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🥞</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Crispy Masala Dosa</h3>
+              <span class="menu-price">₹120</span>
+            </div>
+            <p class="menu-desc">Golden crisp South Indian crepe filled with seasoned potato mash, served with coconut chutney and sambar.</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Pav Bhaji -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🥘</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Special Pav Bhaji</h3>
+              <span class="menu-price">₹140</span>
+            </div>
+            <p class="menu-desc">Spicy mashed vegetable curry cooked with dollops of fresh butter, served with hot toasted buttery pav buns.</p>
+          </div>
+        </div>
+
+        <!-- Item 7: Paneer Tikka -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🍢</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Tandoori Paneer Tikka</h3>
+              <span class="menu-price">₹240</span>
+            </div>
+            <p class="menu-desc">Marinated paneer chunks, bell peppers, and onions skewered and chargrilled in an authentic clay tandoor.</p>
+          </div>
+        </div>
+
+        <!-- Item 8: Butter Garlic Naan -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🫓</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Garlic Butter Naan Basket</h3>
+              <span class="menu-price">₹90</span>
+            </div>
+            <p class="menu-desc">Tandoor-baked Indian leavened bread generously brushed with roasted garlic, coriander, and melted butter.</p>
+          </div>
+        </div>
+
+        <!-- Item 9: Pizza -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🍕</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Margherita Supreme Pizza</h3>
+              <span class="menu-price">₹290</span>
+            </div>
+            <p class="menu-desc">Hand-tossed crust topped with rich tomato herb sauce, melted mozzarella cheese, and aromatic fresh basil.</p>
+          </div>
+        </div>
+
+        <!-- Item 10: Burger -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🍔</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Crispy Veg Cheese Burger</h3>
+              <span class="menu-price">₹150</span>
+            </div>
+            <p class="menu-desc">Crispy spiced potato & corn patty layered with cheddar cheese, fresh lettuce, tomatoes, and tangy sauce.</p>
+          </div>
+        </div>
+
+        <!-- Item 11: Gulab Jamun -->
+        <div class="menu-card">
+          <div class="menu-card-icon">🍨</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Gulab Jamun with Ice Cream</h3>
+              <span class="menu-price">₹110</span>
+            </div>
+            <p class="menu-desc">Warm, soft khoya dumplings soaked in fragrant cardamom rose sugar syrup, paired with vanilla ice cream.</p>
+          </div>
+        </div>
+
+        <!-- Item 12: Masala Chai / Filter Coffee -->
+        <div class="menu-card">
+          <div class="menu-card-icon">☕</div>
+          <div class="menu-card-body">
+            <div class="menu-header">
+              <h3 class="menu-item-name">Special Masala Chai / Coffee</h3>
+              <span class="menu-price">₹60</span>
+            </div>
+            <p class="menu-desc">Freshly brewed ginger-cardamom cutting chai or South Indian frothy filter coffee brewed to perfection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 4. BOOKING SECTION                                           -->
+  <!-- ============================================================ -->
+  <section id="booking" class="section booking-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Book a Table</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">Fill in the details below to reserve your table. We will save your spot!</p>
+      </div>
+
+      <div class="booking-wrapper">
+          <!-- Real-Time Table Availability Banner -->
+          <div class="availability-card" id="availabilityCard">
+            <div class="availability-left">
+              <span class="availability-icon">🪑</span>
+              <div>
+                <h4 class="availability-title">Live Table Availability</h4>
+                <p class="availability-sub">
+                  <span id="availTablesCount" class="highlight-count">12</span> of <strong>12</strong> tables available for <span id="availDateLabel">Today</span>
+                </p>
+              </div>
+            </div>
+            <span id="availBadge" class="badge-avail open">Tables Available</span>
+          </div>
+
+          <!-- Notification Message Area (Displays Success or Error) -->
+          <div id="formMessage" class="form-message" role="alert"></div>
+
+          <!-- Table Reservation Form -->
+          <form id="bookingForm" novalidate>
+            <div class="form-row">
+              <!-- Customer Name -->
+              <div class="form-group">
+                <label for="name">Customer Name <span class="required">*</span></label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="e.g. John Doe" 
+                  required
+                >
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <!-- Customer Email -->
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="e.g. john@example.com" 
+                  required
+                >
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- Customer Phone -->
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  placeholder="e.g. 9876543210" 
+                  required
+                >
+                <span class="field-error" id="phoneError"></span>
+              </div>
+
+              <!-- Number of Guests -->
+              <div class="form-group">
+                <label for="guests">Number of Guests <span class="required">*</span></label>
+                <input 
+                  type="number" 
+                  id="guests" 
+                  name="guests" 
+                  min="1" 
+                  max="20" 
+                  placeholder="Number of persons (1 - 20)" 
+                  required
+                >
+                <span class="field-error" id="guestsError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- Booking Date -->
+              <div class="form-group">
+                <label for="date">Reservation Date <span class="required">*</span></label>
+                <input 
+                  type="date" 
+                  id="date" 
+                  name="date" 
+                  required
+                >
+                <span class="field-error" id="dateError"></span>
+              </div>
+
+              <!-- Booking Time -->
+              <div class="form-group">
+                <label for="time">Reservation Time <span class="required">*</span></label>
+                <input 
+                  type="time" 
+                  id="time" 
+                  name="time" 
+                  required
+                >
+                <span class="field-error" id="timeError"></span>
+              </div>
+            </div>
+
+            <!-- Special Request -->
+            <div class="form-group">
+              <label for="specialRequest">Special Request (Optional)</label>
+              <textarea 
+                id="specialRequest" 
+                name="specialRequest" 
+                rows="3" 
+                placeholder="Mention any seating preference, dietary restrictions, or anniversary celebration..."
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn" class="btn btn-submit">
+              <span id="btnText">Book Table</span>
+              <span id="btnSpinner" class="spinner hidden"></span>
+            </button>
+          </form>
+
+          <!-- Real-Time MongoDB Bookings List Display -->
+          <div class="view-bookings-container">
+            <div class="bookings-header">
+              <h3>📋 Confirmed Bookings (Saved in MongoDB)</h3>
+              <button type="button" id="refreshBookingsBtn" class="btn btn-refresh">🔄 Refresh</button>
+            </div>
+            <div class="table-responsive">
+              <table class="bookings-table">
+                <thead>
+                  <tr>
+                    <th>Customer Name</th>
+                    <th>Date & Time</th>
+                    <th>Guests</th>
+                    <th>Table #</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="bookingsTableBody">
+                  <tr>
+                    <td colspan="6" class="table-loading">Loading bookings from database...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 5. FEEDBACK & RATINGS SECTION                                -->
+  <!-- ============================================================ -->
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Customer Feedback & Ratings</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">We value your dining experience. Share your thoughts or read reviews from our guests!</p>
+      </div>
+
+      <div class="reviews-layout">
+        <!-- Feedback Submission Form Card -->
+        <div class="review-form-card">
+          <h3 class="card-inner-title">Leave Your Feedback</h3>
+          <div id="reviewMessage" class="form-message" role="alert"></div>
+
+          <form id="reviewForm" novalidate>
+            <div class="form-group">
+              <label for="reviewName">Your Name <span class="required">*</span></label>
+              <input type="text" id="reviewName" name="reviewName" placeholder="e.g. Priya Sharma" required>
+              <span class="field-error" id="reviewNameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Your Rating <span class="required">*</span></label>
+              <div class="star-rating" id="starRating">
+                <span class="star selected" data-value="1">★</span>
+                <span class="star selected" data-value="2">★</span>
+                <span class="star selected" data-value="3">★</span>
+                <span class="star selected" data-value="4">★</span>
+                <span class="star selected" data-value="5">★</span>
+              </div>
+              <input type="hidden" id="ratingValue" value="5">
+              <span class="rating-label" id="ratingLabel">5 out of 5 Stars (Excellent!)</span>
+            </div>
+
+            <div class="form-group">
+              <label for="reviewComment">Your Feedback / Review <span class="required">*</span></label>
+              <textarea id="reviewComment" name="reviewComment" rows="3" placeholder="Share your experience about the food, taste, or ambiance..." required></textarea>
+              <span class="field-error" id="reviewCommentError"></span>
+            </div>
+
+            <button type="submit" id="submitReviewBtn" class="btn btn-primary" style="width: 100%;">
+              <span id="reviewBtnText">Submit Feedback</span>
+              <span id="reviewSpinner" class="spinner hidden"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Rating Stats & Reviews List Card -->
+        <div class="reviews-display-card">
+          <div class="rating-summary-box">
+            <div class="rating-big-score" id="avgRatingScore">5.0</div>
+            <div class="rating-summary-info">
+              <div class="stars-gold" id="avgStarsDisplay">★★★★★</div>
+              <p class="rating-total-count"><span id="reviewsCount">0</span> Verified Guest Reviews</p>
+            </div>
+          </div>
+
+          <div class="reviews-list-container" id="reviewsList">
+            <p class="no-reviews">Loading reviews from database...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 6. CONTACT SECTION                                           -->
+  <!-- ============================================================ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">We would love to hear from you. Visit us or reach out anytime!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Address</h3>
+          <p>123 Gourmet Street, Food Valley, City Center</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Phone</h3>
+          <p>+91 98765 43210<br>+91 91234 56789</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Email</h3>
+          <p>info@foodierestaurant.com<br>support@foodierestaurant.com</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">⏰</div>
+          <h3>Opening Hours</h3>
+          <p>Monday - Sunday<br>10:00 AM - 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BOOKING CONFIRMATION POPUP MODAL                             -->
+  <!-- ============================================================ -->
+  <div class="modal-overlay hidden" id="confirmationModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-icon">🎉</span>
+        <h3>Table Reservation Confirmed!</h3>
+        <p class="modal-sub">Thank you! Your table has been reserved in our system.</p>
+      </div>
+
+      <div class="receipt-box">
+        <div class="receipt-row">
+          <span>Booking Reference:</span>
+          <strong id="confirmId">#FTB-0001</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Customer Name:</span>
+          <strong id="confirmName">John Doe</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Assigned Table:</span>
+          <strong class="highlight-table" id="confirmTable">Table #4</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Date & Time:</span>
+          <strong id="confirmDateTime">2026-10-15 at 07:30 PM</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Number of Guests:</span>
+          <strong id="confirmGuests">4 Guests</strong>
+        </div>
+        <div class="receipt-row">
+          <span>Status:</span>
+          <span class="badge-status confirmed">Confirmed ✅</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline-dark" id="printConfirmBtn">🖨️ Print Confirmation</button>
+        <button type="button" class="btn btn-primary" id="closeModalBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER                                                       -->
+  <!-- ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-title">Foodie Restaurant</p>
+      <p class="footer-desc">Delicious food crafted with love and passion.</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2026 Foodie Restaurant. All Rights Reserved. | College Mini Project</p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript file -->
+  <script src="script.js?v=3"></script>
+</body>
+</html>

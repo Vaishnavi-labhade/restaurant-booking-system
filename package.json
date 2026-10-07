@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-booking-fixed-(1)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "restaurent 1"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=restaurant-table-booking-system",
+    "dev": "npm run dev --workspace=restaurant-table-booking-system",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
